@@ -1,0 +1,126 @@
+/* @import "Nebula/Nebula.css"; */
+/* Arc 2.0 CSS Files */
+/* @import "Chrome CSS/animations.css";
+@import "Chrome CSS/better-colored-essentials.css";
+@import "Chrome CSS/better-customize-toolbar.css";
+@import "Chrome CSS/icons.css";
+@import "Chrome CSS/icon-changer.css";
+@import "Chrome CSS/miscellaneous.css";
+@import "Chrome CSS/more-rounded-tabs.css";
+@import "Chrome CSS/pinned-extensions.css";
+@import "Chrome CSS/pip.css";
+@import "Chrome CSS/remove-scrollbar.css";
+@import "Chrome CSS/sidebar.css";
+@import "Chrome CSS/sound-icon.css";
+@import "Chrome CSS/tab-folders.css";
+@import "Chrome CSS/tab-styles.css";
+@import "Chrome CSS/URLbar.css";
+@import "Chrome CSS/workspace-buttons.css"; */
+
+#back-button {
+  /* ← Button */
+  display: none !important;
+}
+
+#forward-button {
+  /* → Button */
+  display: none !important;
+}
+
+#identity-icon-box {
+  /* URL Bar Info */
+  display: none !important;
+}
+
+#identity-permission-box {
+  /* Lock icon in URL Bar */
+  display: none !important;
+}
+
+#tabs-newtab-button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+#tabs-newtab-button .toolbarbutton-text {
+  /* New Tab Button */
+  display: none !important;
+}
+
+#tabs-newtab-button .toolbarbutton-icon {
+  transition: transform 0.1s ease-out;
+}
+
+#tabs-newtab-button:hover .toolbarbutton-icon {
+  transform: rotate(90deg) scale(1.1);
+}
+
+
+.urlbar-input-container {
+  display: flex !important;
+  justify-content: center !important;
+  padding-block: 6px !important;
+
+}
+
+.urlbar-input {
+  text-align: center !important;
+  font-weight: 500 !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px !important;
+}
+
+
+#urlbar {
+  min-height: 40px !important;
+  pointer-events: auto !important;
+}
+
+.tab-text {
+  font-size: 14px !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400 !important;
+  color: white;
+}
+
+.tab-label {
+  color: white;
+}
+
+.zen-current-workspace-indicator-name {
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+toolbarbutton.toolbarbutton-1.chromeclass-toolbar-additional.zen-workspaces-actions {
+  display: none !important;
+}
+
+.zen-current-workspace-indicator-icon {
+  display: none !important;
+}
+
+#urlbar-zoom-button {
+  display: none !important;
+}
+
+.subviewbutton {
+  width: 40px !important;
+}
+
+.urlbarView-url {
+  font-family: 'JetBrainsMono Nerd Font';
+  opacity: 0.7;
+  font-size: 11px;
+}
+
+#titlebar {
+  margin: 5px;
+}

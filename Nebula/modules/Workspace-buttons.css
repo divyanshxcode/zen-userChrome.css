@@ -1,0 +1,86 @@
+/* ------------------------------ Workspace Button Styles ------------------------------ */
+
+/* make workspace indicator have nebula theme background on hover */
+.zen-current-workspace-indicator::before {
+  box-shadow: 0 0px 8px transparent !important;
+  border-radius: var(--nebula-border-radius) !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.zen-current-workspace-indicator:hover::before {
+  background-color: var(--nebula-color) !important;
+  box-shadow: 0 0px 3px light-dark(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.55)) !important;
+  z-index: -1 !important;
+}
+
+/* Common animations */
+@keyframes emojiPulse {
+  0% { transform: scale(0.85); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+/* Base Styling (Style 1 - Default) */
+#zen-workspaces-button {
+  container-type: initial !important;
+  width: auto !important;
+  padding: 3px !important;
+  border-radius: calc(var(--nebula-border-radius) - 2px) !important;
+  background-color: light-dark(rgba(255,255,255,0.1), rgba(0,0,0,0.2)) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1) !important;
+  transition: box-shadow 0.35s ease-out, background-color 0.35s ease-out;
+}
+
+#zen-workspaces-button:hover {
+  background-color: light-dark(rgba(255,255,255,0.25), rgba(0,0,0,0.35)) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5) !important;
+}
+
+/* Default subview button styling */
+#zen-workspaces-button .subviewbutton {
+  border-radius: calc(var(--nebula-border-radius) - 4.5px) !important;
+  font-size: 16px !important;
+  opacity: 0.75 !important;
+  /* filter: grayscale(var(--nebula-workspace-grayscale, 100%)) !important; */
+  transition:
+    background-color 0.2s ease,
+    filter 0.3s ease,
+    opacity 0.3s ease-out,
+    transform 0.2s ease !important;
+  --toolbarbutton-hover-background: color-mix(
+    in srgb,
+    var(--zen-branding-bg-reverse) 10%,
+    transparent 90%
+  ) !important;
+}
+
+#zen-workspaces-button .subviewbutton:hover {
+  background-color: light-dark(rgba(255,255,255,0), rgba(100,100,100,0)) !important;
+  /* filter: grayscale(0%) !important; */
+  opacity: 0.9 !important;
+}
+
+#zen-workspaces-button .subviewbutton:hover > img,
+#zen-workspaces-button .subviewbutton:hover > svg {
+  opacity: 1 !important;
+}
+
+#zen-workspaces-button .subviewbutton:active {
+  background-color: var(--toolbarbutton-active-background) !important;
+  /* filter: grayscale(0%) !important; */
+  transform: scale(0.85) !important;
+}
+
+#zen-workspaces-button .subviewbutton:active:hover {
+  transform: scale(0.9) !important;
+}
+
+#zen-workspaces-button .subviewbutton[active] {
+  background-color: light-dark(rgba(255,255,255,0.12), rgba(245, 245, 245, 0.175)) !important;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2) !important;
+  overflow: hidden !important;
+  position: relative;
+  /* filter: grayscale(0%) !important; */
+  opacity: 1 !important;
+  animation: emojiPulse 0.5s ease-out;
+}
