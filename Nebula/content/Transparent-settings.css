@@ -1,18 +1,20 @@
-@-moz-document domain(monkeytype.com) {
-    body {
-      background-color: rgba(15, 15, 20, 0.4) !important; /* Darker base color */
-    }
-  }
-
-  :root{
+:root {
   --zen-colors-tertiary: transparent !important;
   --zen-settings-secondary-background: transparent !important;
 }
 
-groupbox:not(#sineInstallationGroup:popover-open){
+groupbox:not(#sineInstallationGroup:popover-open) {
 /*   background: var(--zen-colors-tertiary) !important; */
-  background: var(--zen-colors-border-contrast) !important;
-  border: none
+  background: light-dark(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.35)) !important;
+  border: none;
+}
+
+@-moz-document url-prefix("about:") {
+  table,
+  .action-box {
+    background-color: light-dark(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.35)) !important;
+    border-radius: 13px !important;
+  }
 }
 
 @-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
@@ -62,4 +64,10 @@ footer{
   tr{
     outline: solid 1px #88888822 !important;
   }
+}
+
+/* Fixes the transparent dialogs. */
+.dialogFrame {
+  background: var(--zen-dialog-background);
+  border-radius: 8px;
 }
