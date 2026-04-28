@@ -22,7 +22,7 @@ without searching through the code directly */
   --nebula-color: light-dark(var(--var-nebula-tabs-default-light), var(--var-nebula-tabs-default-dark)) !important;
   --nebula-color-hover: light-dark(var(--var-nebula-tabs-hover-light), var(--var-nebula-tabs-hover-dark)) !important;
   --nebula-color-selected: light-dark(var(--var-nebula-tabs-selected-light), var(--var-nebula-tabs-selected-dark)) !important;
-  
+
   --nebula-color-shadow: light-dark(var(--var-nebula-color-shadow-light), var(--var-nebula-color-shadow-dark)) !important;
 }
 
@@ -32,23 +32,23 @@ without searching through the code directly */
 /* Pre-defined backup values */
 :root {
   /* ✨ Glass & Blur */
-  --nebula-glass: blur(32px) saturate(140%);
+  --nebula-glass: blur(20px) saturate(140%);
   --nebula-color-glass: light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4));
-  
+
   /* 🖼️ Layout */
   --nebula-border-radius: 13px;
   --nebula-essentials-width: 60px;
   --nebula-workspace-grayscale: 100%;
-  
+
   /* 🎨 UI & Website Tint */
-  --nebula-ui-tint: light-dark(rgba(255,255,255,0.2), rgba(0,0,0,0.2));
-  --nebula-website-tint: light-dark(rgba(255,255,255,0), rgba(0,0,0,0));
-  
+  --nebula-ui-tint: light-dark(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  --nebula-website-tint: light-dark(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0));
+
   /* 🔮 Colors */
   --nebula-color-min: light-dark(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
-  --nebula-color: light-dark(rgba(255,255,255,0.25), rgba(0,0,0,0.35));
-  --nebula-color-hover: light-dark(rgba(255,255,255,0.35), rgba(0,0,0,0.45));
-  --nebula-color-selected: light-dark(rgba(255,255,255,0.45), rgba(0,0,0,0.55));
-  
+  --nebula-color: light-dark(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.35));
+  --nebula-color-hover: light-dark(rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.45));
+  --nebula-color-selected: light-dark(rgba(255, 255, 255, 0.45), rgba(0, 0, 0, 0.55));
+
   --nebula-color-shadow: light-dark(rgba(255, 255, 255, 0.055), rgba(0, 0, 0, 0.55));
 }
